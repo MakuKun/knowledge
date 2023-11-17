@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <heder class="header">
+                <div class="header_logo">
+                    <img src="/img/tinified/3 копия 2.jpg" alt="">
+                </div>
+                <div class="modal_logo">
+                    
+                    <div class="modal_logo_content">
+                        <div class="close_btn_logo">
+                            <span></span>
+                        </div>
+                        <div class="slider">
+                            <div class="item">
+                              <img src="/img/albom/1.jpg" alt="nothing">
+                            </div>
+                            <div class="item">
+                              <img src="/img/albom/2.jpg">
+                            </div>
+                            <div class="item">
+                              <img src="/img/albom/3.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="/img/albom/4.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="/img/albom/5.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="/img/albom/6.jpg">
+                            </div>
+                            <a class="previous" onclick="previousSlide()">&#10094;</a>
+                            <a class="next" onclick="nextSlide()">&#10095;</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="header_call_me">
+                    <button type="button" class="call">связаться со мной</button>
+                    <div class="networks header_social">
+                        <div class="svg_networks social">
+                            <img src="/img/network/arrow-up-right-svgrepo-com.svg" alt="Net">
+                        </div>
+                        <a class="svg_networks vk">
+                            <img src="/img/network/social-vkontakte-svgrepo-com.svg" alt="Vk">
+                        </a>
+                        <a class="svg_networks tg">
+                            <img src="/img/network/social-telegram-svgrepo-com.svg" alt="Tg">
+                        </a>
+                        <a class="svg_networks inst">
+                            <img src="/img/network/social-instagram-svgrepo-com копия.png" alt="Inst">
+                        </a>
+                    </div>
+                </div>
+                <div class="modal_call_me">
+                    
+                    <div class="modal_call_me_content">
+                        <div class="close_btn_call">
+                            <span></span>
+                        </div>
+                        <p>Оставьте заявку, и я свяжусь с вами в ближайшее время!</p>
+                        <form class="form" action="" method="post">
+                            <input type="text" name="first_name" placeholder="Фамилия" required>
+                            <input type="text" name="secondary_name" placeholder="Имя" required>
+                            <input type="number" name="user_phone" placeholder="Номер телефона" required>
+                            <button type="submit">отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="header_burger">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <div class="burger_back"></div>
+                    <div class="burger_menu">
+                        <a data-goto=".greeting" href="#" class="menu_link">О себе</a>
+                        <a data-goto=".advantages" href="#" class="menu_link">Преимущества</a>
+                        <a data-goto=".facts" href="#" class="menu_link">Немного фактов</a>
+                        <a data-goto=".reviews" href="#" class="menu_link">Отзывы</a>
+                        <a href="#" class="call_link">Связаться со мной</a>
+                        <div class="networks social_burger">
+                            <a class="svg_networks vk">
+                                <img src="/img/network/social-vkontakte-svgrepo-com копия (1).png" alt="Vk">
+                            </a>
+                            <a class="svg_networks tg">
+                                <img src="/img/network/social-telegram-svgrepo-com копия (1).png" alt="Tg">
+                            </a>
+                            <a class="svg_networks inst">
+                                <img src="/img/network/social-instagram-svgrepo-com копия 2.png" alt="Inst">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </heder>
+        
+            <div class="greeting">
+                <div class="greeting_top">
+                    <div class="greeting_chapter">
+                        <span>о себе</span>
+                        <span>(1)</span>
+                    </div>
+                    <div class="greeting_name">
+                        роман назаров
+                    </div>
+                </div>
+                <div class="greeting_text">
+                    <div class="greet_paragraph_one">
+                        Я окончил школу с золотой медалью и получил высшее образование с красным дипломом на физико-техническом факультете кубанского государственного университета, что дало мне глубокие знания в области математики.
+                    </div>
+                    <div class="greet_paragraph_two">
+                        У меня есть четырехлетний опыт преподавания, и я с радостью помогу тебе освоить математику - науку, которая помогает нам развивать логическое мышление, решать сложные задачи и понимать мир вокруг нас.
+                    </div>
+                </div>
+                <div class="greeting_photo">
+                    <div class="greet_photo_one">
+                        <img src="/img/1 копия.jpg" alt="">
+                    </div>
+                    <div class="greet_photo_two">
+                        <img src="/img/8 копия.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="advantages">
+                <div class="advantages_top">
+                    <div class="advantages_chapter">
+                        <span>Преимущества</span>
+                        <span>(2)</span>
+                    </div>
+                    <div class="advantages_title">
+                        Что вы получаете, работая со мной:
+                    </div>
+                </div>
+                <div class="advantages_text">
+                    <div class="text_chapter_one">
+                        <div class="text_title one">индивидуальная программа<br>для каждого ученика</div>
+                        <div class="chapter_one_first">Я докажу, что каждый может научиться математике, нужно лишь правильно подходить к обучению.</div>
+                    </div>
+                    <div class="text_chapter_two">
+                        <div class="chapter_two_first">каждый ученик имеет свой уникальный образ мышления и обучающийся стиль. Я готов адаптироваться к вашим потребностям и находить индивидуальный подход, который лучше всего будет работать.</div>
+                        <div class="text_title two">гарантии</div>
+                        <div class="chapter_two_secondary">Я гарантирую, что объяснения и решения задач, которые предлагаю, будут ясными и понятными. Я уверен, что с моей помощью вы сможете освоить сложные концепции и получить удовольствие от решения задач.</div>
+                    </div>
+                    <div class="text_chapter_three"> 
+                        <div class="chapter_three_first">Я подготовлю вас к ОГЭ и ЕГЭ, предоставлю разнообразные материалы, объяснения и сделаю так, чтобы вы уверенно сдали экзамены.</div>
+                        <div class="text_title three">связь с жизнью</div>
+                        <div class="chapter_three_secondary">Я всегда стараюсь находить примеры из повседневной жизни, чтобы помочь вам увидеть, как математика применяется за ее пределами. </div>
+                    </div>
+                    <div class="text_chapter_four"> 
+                        <div class="chapter_four_first">Это поможет осознать, что математика - это не просто абстрактные числа и формулы, а инструмент, который можно использовать для решения реальных проблем.</div>
+                        <div class="text_title four">Поддержка и мотивация</div>
+                        <div class="chapter_four_secondary">Я всегда готов поддержать вас и помочь преодолеть трудности в учении математики. Будете видеть прогресс, я буду вдохновлять и мотивировать вас продолжать развиваться в этой области.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="facts">
+                <div class="facts_chapter">
+                    <span>Немного фактов</span>
+                    <span>(3)</span>
+                </div>
+                <div class="facts_title">
+                    репетиторство стало неотъемлемой частью моей жизни 4 года назад. за это время я выпустил большое количество учеников
+                </div>
+                <div class="facts_procent">
+                    <div class="procent">
+                        <div class="procent_title">>50</div>
+                        <div class="procent_text">выпущеных учеников</div>
+                    </div>
+                    <div class="procent">
+                        <div class="procent_title">70<sup>%</sup></div>
+                        <div class="procent_text">Сдают ОГЭ и ЕГЭ на отлично</div>
+                    </div>
+                    <div class="procent">
+                        <div class="procent_title">100<sup>%</sup></div>
+                        <div class="procent_text">положительных отзывов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="reviews_top">
+                    <div class="reviews_chapter">
+                        <span>Отзывы</span>
+                        <span>(4)</span>
+                    </div>
+                    <div class="reviews_title">
+                        <p>2020-2023</p>
+                    </div>
+                </div>
+                <div class="reviews_image_containers">
+                    <div class="reviews_image_container">
+                        <div class="reviews_image">
+                            <img src="/img/reviews/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews_image_container">
+                        <div class="reviews_image">
+                            <img src="/img/reviews/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews_image_container">
+                        <div class="reviews_image">
+                            <img src="/img/reviews/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews_image_container">
+                        <div class="reviews_image">
+                            <img src="/img/reviews/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews_image_container">
+                        <div class="reviews_image">
+                            <img src="/img/reviews/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer"></footer>
+        </div>
+    </div>
+
+
+    
+    <script src="/js/script.js" defer></script>
+</body>
+</html>
