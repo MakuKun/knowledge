@@ -467,6 +467,33 @@ body.lock {
   transition: 0.6s;
 }
 
+@-webkit-keyframes burgerMenu {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes burgerMenu {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .burger_menu {
   position: absolute;
   display: -webkit-box;
@@ -584,22 +611,19 @@ body.lock {
 }
 @media (max-width: 630px) {
   .modal_call_me_content {
-    padding: 45px 30px;
-    row-gap: 20px;
+    padding: 70px 30px 30px;
+    row-gap: 40px;
   }
   .modal_call_me_content p {
     max-width: 350px;
     font-size: 18px;
   }
-  .close_btn_call {
-    width: 25px;
-    height: 25px;
-  }
   .form {
-    row-gap: 20px;
+    width: 90%;
+    row-gap: 35px;
   }
   .form > * {
-    height: 45px;
+    height: 60px;
     font-size: 16px;
   }
   .form :last-child {
@@ -613,29 +637,59 @@ body.lock {
   }
 }
 @media (max-width: 390px) {
-  .modal_call_me_content {
-    padding: 30px 15px;
+  .burger_menu {
+    padding: 50px 15px;
+    width: 210px;
+    height: 330px;
     row-gap: 20px;
+  }
+  .burger_menu a {
+    font-size: 16px;
+  }
+  .networks.social_burger {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .burger_back.active {
+    width: 210px;
+    height: 330px;
+  }
+  .modal_call_me.active {
+    padding: 30px;
+  }
+  .modal_call_me_content {
+    padding: 60px 15px 30px;
+    row-gap: 35px;
   }
   .modal_call_me_content p {
     font-size: 14px;
   }
   .close_btn_call {
-    width: 20px;
+    width: 30px;
     height: 20px;
   }
   .form {
     width: 95%;
-    row-gap: 14px;
+    row-gap: 20px;
   }
   .form > * {
-    height: 35px;
+    height: 60px;
     font-size: 14px;
   }
   .form :last-child {
+    height: 50px;
     max-width: 160px;
     font-size: 14px;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .burger {
     width: 35px;
